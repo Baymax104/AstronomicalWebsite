@@ -1,24 +1,16 @@
-/* nav */
-#nav_list .nav_item:nth-child(1)>a {
-    background-color: var(--nav-hover-bg-color);
-    color: var(--nav-hover-color);
-}
-
 /* main */
 main {
-    position: relative;
-}
-#img_background {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    background-size: cover;
+    position: relative;
 }
 #start_btn {
     width: 150px;
     height: 50px;
     position: absolute;
     left: 43%;
-    bottom: 30%;
+    bottom: 34%;
     border-radius: 15px;
     font-size: 1.2em;
     color: white;

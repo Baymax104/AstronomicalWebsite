@@ -108,5 +108,4 @@ header {
 /* nav_selected_item */
 #nav_selected {
     background-color: var(--nav-hover-bg-color);
-    color: var(--nav-hover-color);
 }
