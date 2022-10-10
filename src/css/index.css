@@ -5,6 +5,9 @@
 }
 
 /* main */
+main {
+    position: relative;
+}
 #img_background {
     width: 100%;
     height: auto;
