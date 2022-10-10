@@ -5,6 +5,7 @@
     --nav-hover-bg-color: rgb(29, 33, 38);
     --start-button-hover-color: #1bcedf;
     --container-bg-color: #0f1f33;
+    --side-bar-item-hover-color: #eee;
 }
 body,html {
     height: 100%;
