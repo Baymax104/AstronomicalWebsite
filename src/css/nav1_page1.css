@@ -1,0 +1,27 @@
+/* nav */
+#nav_list .nav_item:nth-child(2)>a {
+    background-color: var(--nav-hover-bg-color);
+    color: var(--nav-hover-color);
+}
+
+/* main */
+main {
+    min-height: 100%;
+    background-color: var(--container-bg-color);
+    overflow: hidden;
+}
+#view_container {
+    width: 80%;
+    height: auto;
+    background-color: red;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#side_bar {
+    background-color: yellow;
+}
+#content_container {
+    /*height: 2000px;*/
+    background-color: green;
+}

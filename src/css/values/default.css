@@ -1,0 +1,18 @@
+:root {
+    --header-bg-color: rgb(43, 49, 56);
+    --gradient-color: linear-gradient(135deg, #5b247a, #1bcedf);
+    --nav-hover-color: rgb(61, 201, 227);
+    --nav-hover-bg-color: rgb(29, 33, 38);
+    --start-button-hover-color: #1bcedf;
+    --container-bg-color: #0f1f33;
+}
+body,html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
+}
+li {
+    list-style: none;
+}
