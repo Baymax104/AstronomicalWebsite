@@ -104,3 +104,9 @@ header {
     background-color: var(--nav-hover-color);
     transition: background-color 0.3s;
 }
+
+/* nav_selected_item */
+#nav_selected {
+    background-color: var(--nav-hover-bg-color);
+    color: var(--nav-hover-color);
+}

@@ -5,63 +5,25 @@
     <title>首页</title>
     <!--清空样式-->
     <link rel="stylesheet" href="/css/values/reset.css">
-    <!--引入颜色-->
+    <!--默认样式-->
     <link rel="stylesheet" href="/css/values/default.css">
-    <!--导航栏样式-->
-    <link rel="stylesheet" href="/css/nav.css">
     <!--index页-->
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/index.js"></script>
 </head>
 <body>
-    <header>
-        <div id="nav_icon">
-            <img id="nav_icon_img" src="/img/nav_icon.png" alt="icon">
-            <span id="nav_icon_title">Astronomy</span>
-        </div>
-        <ul id="nav_list">
-            <li class="nav_item">
-                <a href="#">首页</a>
-            </li>
-            <li class="nav_item">
-                <a href="#">八大行星</a>
-                <ul class="menu">
-                    <li class="menu_item"><a href="nav1_page1.html">地球</a> </li>
-                    <li class="menu_item"><a href="#">水星</a> </li>
-                    <li class="menu_item"><a href="#">金星</a> </li>
-                    <li class="menu_item"><a href="#">火星</a> </li>
-                    <li class="menu_item"><a href="#">木星</a> </li>
-                    <li class="menu_item"><a href="#">土星</a> </li>
-                    <li class="menu_item"><a href="#">天王星</a> </li>
-                    <li class="menu_item"><a href="#">海王星</a> </li>
-                </ul>
-            </li>
-            <li class="nav_item">
-                <a href="#">天文现象</a>
-                <ul class="menu">
-                    <li class="menu_item"><a href="#">日食</a> </li>
-                    <li class="menu_item"><a href="#">月食</a> </li>
-                    <li class="menu_item"><a href="#">流星雨</a> </li>
-                </ul>
-            </li>
-            <li class="nav_item">
-                <a href="#">天体</a>
-                <ul class="menu">
-                    <li class="menu_item"><a href="#">行星</a></li>
-                    <li class="menu_item"><a href="#">恒星</a></li>
-                    <li class="menu_item"><a href="#">星云</a></li>
-                    <li class="menu_item"><a href="#">星系</a></li>
-                </ul>
-            </li>
-            <li class="nav_item">
-                <a href="#">图片展示</a>
-            </li>
-        </ul>
-    </header>
+
+    <!--header-->
+    <ast-header nav-selected="0"></ast-header>
+    <script src="/js/template/ast-header.js"></script>
+
+    <!--main-->
     <main>
         <img id="img_background" src="/img/index_bg.jpg" alt="background">
         <button id="start_btn">Start!</button>
     </main>
+
+    <!--footer-->
     <footer>
         test
     </footer>
