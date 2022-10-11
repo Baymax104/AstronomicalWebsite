@@ -1,9 +1,9 @@
 const headerTemp = document.createElement("template");
 
 headerTemp.innerHTML = `
-    <link rel="stylesheet" href="/css/values/reset.css">
-    <link rel="stylesheet" href="/css/values/default.css">
-    <link rel="stylesheet" href="/css/template/nav.css">
+    <link rel="stylesheet" href="/css/common/reset.css">
+    <link rel="stylesheet" href="/css/common/default.css">
+    <link rel="stylesheet" href="/css/template/ast-header.css">
     
     <header>
         <div id="nav_icon">

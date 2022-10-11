@@ -1,9 +1,9 @@
 const footerTemp = document.createElement("template");
 
 footerTemp.innerHTML = `
-    <link rel="stylesheet" href="/css/values/reset.css">
-    <link rel="stylesheet" href="/css/values/default.css">
-    <link rel="stylesheet" href="/css/template/footer.css">
+    <link rel="stylesheet" href="/css/common/reset.css">
+    <link rel="stylesheet" href="/css/common/default.css">
+    <link rel="stylesheet" href="/css/template/ast-footer.css">
     
     <footer>
         <span>FOLLOW ME</span>

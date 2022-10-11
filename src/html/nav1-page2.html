@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <title>八大行星-水星</title>
     <!--清空样式-->
-    <link rel="stylesheet" href="/css/values/reset.css">
+    <link rel="stylesheet" href="/css/common/reset.css">
     <!--默认样式-->
-    <link rel="stylesheet" href="/css/values/default.css">
+    <link rel="stylesheet" href="/css/common/default.css">
+
+    <!--主容器样式-->
+    <link rel="stylesheet" href="/css/common/main-container.css">
+    <!--侧边栏样式-->
+    <link rel="stylesheet" href="/css/common/side-bar.css">
 </head>
 <body>
-
     <!--header-->
     <ast-header nav-selected="1"></ast-header>
     <script src="/js/template/ast-header.js"></script>
 
+    <!--main-->
+    <main style="background-image: url('/img/bg_container.jpg');">
+        <div class="view_container">
+            <div class="side_bar">
+                <span class="side_bar_title">导航栏</span>
+                <ul class="side_bar_list">
+                    <li class="side_bar_item"><a href="#">test</a></li>
+                    <li class="side_bar_item"><a href="#">test</a></li>
+                    <li class="side_bar_item"><a href="#">test</a></li>
+                    <li class="side_bar_item"><a href="#">test</a></li>
+                    <li class="side_bar_item"><a href="#">test</a></li>
+                    <li class="side_bar_item"><a href="#">test</a></li>
+                </ul>
+            </div>
+            <div class="content_container">
+                article
+            </div>
+        </div>
+    </main>
+
+    <!--footer-->
+    <ast-footer></ast-footer>
+    <script src="/js/template/ast-footer.js"></script>
 </body>
 </html>
