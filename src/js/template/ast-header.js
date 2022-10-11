@@ -1,13 +1,13 @@
-const template = document.createElement("template");
+const headerTemp = document.createElement("template");
 
-template.innerHTML = `
+headerTemp.innerHTML = `
     <link rel="stylesheet" href="/css/values/reset.css">
     <link rel="stylesheet" href="/css/values/default.css">
     <link rel="stylesheet" href="/css/template/nav.css">
     
     <header>
         <div id="nav_icon">
-            <img id="nav_icon_img" src="/img/nav_icon.png" alt="icon">
+            <img id="nav_icon_img" src="/img/icon_nav.png" alt="icon">
             <span id="nav_icon_title">Astronomy</span>
         </div>
         <ul id="nav_list">
@@ -56,7 +56,7 @@ class AstHeader extends HTMLElement {
     constructor() {
         super();
         let shadow = this.attachShadow({mode: 'closed'});
-        let content = template.content.cloneNode(true);
+        let content = headerTemp.content.cloneNode(true);
 
         let navSelected = parseInt(this.getAttribute("nav-selected"));
 
