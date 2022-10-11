@@ -3,5 +3,17 @@
     width: 72%;
     height: auto;
     margin-left: 25px;
-    background-color: green;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+.content {
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
+}
+.content p {
+    text-indent: 30px;
+    line-height: 1.8;
+    letter-spacing: 1px;
 }
