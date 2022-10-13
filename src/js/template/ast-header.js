@@ -1,14 +1,14 @@
 const headerTemp = document.createElement("template");
 
 headerTemp.innerHTML = `
-    <link rel="stylesheet" href="/css/common/reset.css">
-    <link rel="stylesheet" href="/css/common/default.css">
-    <link rel="stylesheet" href="/css/template/ast-header.css">
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/default.css">
+    <link rel="stylesheet" href="/css/base/ast-header.css">
     
     <header>
-        <div id="nav_icon">
-            <img id="nav_icon_img" src="/img/icon_nav.png" alt="icon">
-            <span id="nav_icon_title">Astronomy</span>
+        <div id="nav_logo">
+            <img id="nav_logo_img" src="/img/icon_logo.png" alt="icon">
+            <span id="nav_logo_title">Astronomy</span>
         </div>
         <ul id="nav_list">
             <li class="nav_item">
