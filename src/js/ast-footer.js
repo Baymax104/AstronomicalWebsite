@@ -19,13 +19,15 @@ footerTemp.innerHTML = `
     </footer>
 `;
 
-class AstFooter extends HTMLElement {
-    constructor() {
-        super();
-        let shadow = this.attachShadow({mode: "closed"});
-        let content = footerTemp.content;
+(function () {
+    class AstFooter extends HTMLElement {
+        constructor() {
+            super();
+            let shadow = this.attachShadow({mode: "closed"});
+            let content = footerTemp.content;
 
-        shadow.appendChild(content);
+            shadow.appendChild(content);
+        }
     }
-}
-window.customElements.define("ast-footer", AstFooter);
+    window.customElements.define("ast-footer", AstFooter);
+})();

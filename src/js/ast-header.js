@@ -51,44 +51,45 @@ headerTemp.innerHTML = `
     </header>
 `;
 
+(function () {
+    class AstHeader extends HTMLElement {
+        constructor() {
+            super();
+            let shadow = this.attachShadow({mode: 'closed'});
+            let content = headerTemp.content;
 
-class AstHeader extends HTMLElement {
-    constructor() {
-        super();
-        let shadow = this.attachShadow({mode: 'closed'});
-        let content = headerTemp.content;
+            let navSelected = parseInt(this.getAttribute("nav-selected"));
 
-        let navSelected = parseInt(this.getAttribute("nav-selected"));
+            // 设置导航栏选中样式
+            let navALabels = content.querySelectorAll(".nav_item>a");
+            navALabels[navSelected].setAttribute("id", "nav_selected");
 
-        // 设置导航栏选中样式
-        let navALabels = content.querySelectorAll(".nav_item>a");
-        navALabels[navSelected].setAttribute("id", "nav_selected");
-
-        // nav栏首页和图片库添加跳转
-        if (navSelected !== 0) {
-            navALabels[0].onclick = function () {
-                location.href = "index.html";
-            }
-        }
-        if (navSelected !== navALabels.length - 1) {
-            navALabels[navALabels.length - 1].onclick = function () {
-                location.href = "picture-display.html";
-            }
-        }
-
-        // menu设置跳转
-        let menus = content.querySelectorAll(".menu");
-        for (let i = 0; i < menus.length; i++) {
-            let aLabels = menus[i].getElementsByTagName("a");
-            for (let j = 0; j < aLabels.length; j++) {
-                let url = "nav" + (i + 1) + "-page" + (j + 1) + ".html";
-                aLabels[j].onclick = function () {
-                    location.href = url;
+            // nav栏首页和图片库添加跳转
+            if (navSelected !== 0) {
+                navALabels[0].onclick = function () {
+                    location.href = "index.html";
                 }
             }
-        }
+            if (navSelected !== navALabels.length - 1) {
+                navALabels[navALabels.length - 1].onclick = function () {
+                    location.href = "picture-display.html";
+                }
+            }
 
-        shadow.appendChild(content);
+            // menu设置跳转
+            let menus = content.querySelectorAll(".menu");
+            for (let i = 0; i < menus.length; i++) {
+                let aLabels = menus[i].getElementsByTagName("a");
+                for (let j = 0; j < aLabels.length; j++) {
+                    let url = "nav" + (i + 1) + "-page" + (j + 1) + ".html";
+                    aLabels[j].onclick = function () {
+                        location.href = url;
+                    }
+                }
+            }
+
+            shadow.appendChild(content);
+        }
     }
-}
-window.customElements.define("ast-header", AstHeader);
+    window.customElements.define("ast-header", AstHeader);
+})();
