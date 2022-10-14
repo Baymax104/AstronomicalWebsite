@@ -14,3 +14,11 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
 }
+.content_container {
+    width: 72%;
+    height: auto;
+    margin-left: 25px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}

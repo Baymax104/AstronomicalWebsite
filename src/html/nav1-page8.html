@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="/css/base/reset.css">
     <!--默认样式-->
     <link rel="stylesheet" href="/css/base/default.css">
-
     <!--主容器样式-->
     <link rel="stylesheet" href="/css/main-container.css">
-    <!--侧边栏样式-->
-    <link rel="stylesheet" href="/css/side-bar.css">
+
 </head>
 <body>
     <!--header-->
@@ -21,19 +19,37 @@
     <!--main-->
     <main style="background-image: url('/img/bg_container.jpg');">
         <div class="view_container">
-            <div class="side_bar">
-                <span class="side_bar_title">导航栏</span>
-                <ul class="side_bar_list">
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                </ul>
-            </div>
+
+            <!--侧边栏-->
+            <side-bar>
+                <a href="#">test</a>
+                <a href="#">test</a>
+                <a href="#">test</a>
+                <a href="#">test</a>
+            </side-bar>
+            <script src="/js/side-bar.js"></script>
+
             <div class="content_container">
-                article
+
+                <!--轮播图-->
+                <carousel-image>
+                    <img src="/img/carousel/car_neptune1.jpg" alt="海王星1">
+                    <img src="/img/carousel/car_neptune2.jpg" alt="海王星2">
+                    <img src="/img/carousel/car_neptune3.jpg" alt="海王星3">
+                </carousel-image>
+                <script src="/js/carousel-image.js"></script>
+
+                <!--内容区-->
+                <div class="content">
+                    <p>article 测试测试</p>
+                    <p>article</p>
+                    <p>article</p>
+                    <p>article</p>
+                    <p>article</p>
+                    <p>article</p>
+                    <p>article</p>
+                    <p>article</p>
+                </div>
             </div>
         </div>
     </main>
