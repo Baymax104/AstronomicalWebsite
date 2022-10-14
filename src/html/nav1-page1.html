@@ -9,31 +9,43 @@
     <link rel="stylesheet" href="/css/base/default.css">
 
     <!--主容器样式-->
-    <link rel="stylesheet" href="/css/base/main-container.css">
+    <link rel="stylesheet" href="/css/main-container.css">
     <!--侧边栏样式-->
-    <link rel="stylesheet" href="/css/base/side-bar.css">
+    <link rel="stylesheet" href="/css/side-bar.css">
     <link rel="stylesheet" href="/css/nav1-page1.css">
+
+    <script src="/js/nav1-page1.js"></script>
 </head>
 <body>
     <!--header-->
     <ast-header nav-selected="1"></ast-header>
-    <script src="/js/template/ast-header.js"></script>
+    <script src="/js/ast-header.js"></script>
 
     <!--main-->
     <main style="background-image: url('/img/bg_container.jpg');">
         <div class="view_container">
-            <div class="side_bar">
-                <span class="side_bar_title">导航栏</span>
-                <ul class="side_bar_list">
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                    <li class="side_bar_item"><a href="#">test</a></li>
-                </ul>
-            </div>
+            <side-bar>
+                <a href="#">test</a>
+                <a href="#">test</a>
+                <a href="#">test</a>
+                <a href="#">test</a>
+            </side-bar>
+            <script src="/js/side-bar.js"></script>
+
             <div class="content_container">
+                <div class="carousel_container">
+                    <ul class="carousel_img_container">
+                        <li><img src="/img/car_earth1.jpg" alt="地球1"></li>
+                        <li><img src="/img/car_earth2.jpg" alt="地球2"></li>
+                        <li><img src="/img/car_earth3.jpg" alt="地球3"></li>
+                        <li><img src="/img/car_earth1.jpg" alt="地球1"></li>
+                    </ul>
+                    <div class="carousel_nav">
+                        <a href="javascript:"></a>
+                        <a href="javascript:"></a>
+                        <a href="javascript:"></a>
+                    </div>
+                </div>
                 <div class="content">
                     <p>article 测试测试</p>
                     <p>article</p>
@@ -50,6 +62,6 @@
 
     <!--footer-->
     <ast-footer></ast-footer>
-    <script src="/js/template/ast-footer.js"></script>
+    <script src="/js/ast-footer.js"></script>
 </body>
 </html>

@@ -57,11 +57,11 @@ header {
     text-decoration: none;
     color: white;
     font-size: 1.4em;
+    transition: background-color 0.3s;
 }
 #nav_list .nav_item>a:hover {
     background-color: var(--nav-hover-bg-color);
     color: var(--nav-hover-color);
-    transition: background-color 0.3s;
 }
 
 
@@ -98,10 +98,10 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
+    transition: background-color 0.3s;
 }
 #nav_list .menu_item a:hover{
     background-color: var(--nav-hover-color);
-    transition: background-color 0.3s;
 }
 
 /* nav_selected_item */

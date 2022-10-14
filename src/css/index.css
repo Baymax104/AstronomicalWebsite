@@ -16,9 +16,9 @@ main {
     color: white;
     border: 0;
     background-image: var(--gradient-color);
+    transition: all 0.2s;
 }
 #start_btn:hover {
     box-shadow: 0 0 20px 4px var(--start-button-hover-color);
-    transition: all 0.2s;
 }
 

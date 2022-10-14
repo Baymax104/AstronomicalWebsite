@@ -3,7 +3,7 @@ const footerTemp = document.createElement("template");
 footerTemp.innerHTML = `
     <link rel="stylesheet" href="/css/base/reset.css">
     <link rel="stylesheet" href="/css/base/default.css">
-    <link rel="stylesheet" href="/css/base/ast-footer.css">
+    <link rel="stylesheet" href="/css/ast-footer.css">
     
     <footer>
         <span>FOLLOW ME</span>
@@ -23,7 +23,7 @@ class AstFooter extends HTMLElement {
     constructor() {
         super();
         let shadow = this.attachShadow({mode: "closed"});
-        let content = footerTemp.content.cloneNode(true);
+        let content = footerTemp.content;
 
         shadow.appendChild(content);
     }

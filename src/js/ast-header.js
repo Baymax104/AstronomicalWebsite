@@ -3,7 +3,7 @@ const headerTemp = document.createElement("template");
 headerTemp.innerHTML = `
     <link rel="stylesheet" href="/css/base/reset.css">
     <link rel="stylesheet" href="/css/base/default.css">
-    <link rel="stylesheet" href="/css/base/ast-header.css">
+    <link rel="stylesheet" href="/css/ast-header.css">
     
     <header>
         <div id="nav_logo">
@@ -56,7 +56,7 @@ class AstHeader extends HTMLElement {
     constructor() {
         super();
         let shadow = this.attachShadow({mode: 'closed'});
-        let content = headerTemp.content.cloneNode(true);
+        let content = headerTemp.content;
 
         let navSelected = parseInt(this.getAttribute("nav-selected"));
 
