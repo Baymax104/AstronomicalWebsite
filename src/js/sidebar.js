@@ -3,7 +3,7 @@ let sideBarTemp = document.createElement("template");
 sideBarTemp.innerHTML = `
     <link rel="stylesheet" href="/css/base/reset.css">
     <link rel="stylesheet" href="/css/base/default.css">
-    <link rel="stylesheet" href="/css/side-bar.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
 
     <div id="side_bar">
         <span id="side_bar_title">导航栏</span>
