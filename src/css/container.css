@@ -6,7 +6,7 @@ main {
     background-size: contain;
     overflow: hidden;
 }
-.view_container {
+#view_container {
     width: 80%;
     height: auto;
     margin: 60px auto;
@@ -14,7 +14,7 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
 }
-.content_container {
+#content_container {
     width: 72%;
     height: auto;
     margin-left: 25px;

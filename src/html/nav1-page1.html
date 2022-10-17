@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/container.css">
     <!--内容区样式-->
     <link rel="stylesheet" href="/css/content.css">
-    <script src="/js/nav1-page1.js"></script>
+    <script src="/js/content.js"></script>
 </head>
 <body>
     <!--header-->
@@ -20,21 +20,17 @@
 
     <!--main-->
     <main style="background-image: url('/img/bg_container.jpg');">
-        <div class="view_container">
+        <div id="view_container">
 
             <!--侧边栏-->
             <side-bar>
-                <a href="#">test</a>
-                <a href="#">test</a>
-                <a href="#">test</a>
-                <a href="#">test</a>
             </side-bar>
-            <script src="/js/sidebar.js"></script>
 
-            <div class="content_container">
+            <!--内容-->
+            <div id="content_container">
 
                 <!--标题-->
-                <div class="content_title">地球</div>
+                <div id="content_title">地球</div>
 
                 <!--轮播图-->
                 <carousel-image>
@@ -45,7 +41,7 @@
                 <script src="/js/carousel-image.js"></script>
 
                 <!--内容区-->
-                <div class="content">
+                <div id="content">
                     <h1>简介</h1>
                         <p>
                             地球是距离太阳的第三个行星，也是目前人类已知的唯一孕育和支持生命的天体。
@@ -184,6 +180,11 @@
 
                 </div>
             </div>
+
+            <!--动态设置侧边栏-->
+            <script src="/js/content.js"></script>
+            <!--设置后渲染标签-->
+            <script src="/js/sidebar.js"></script>
         </div>
     </main>
 

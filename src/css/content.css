@@ -1,5 +1,5 @@
 /* content_title */
-.content_title {
+#content_title {
     width: 100%;
     height: 100px;
     line-height: 100px;
@@ -13,29 +13,29 @@
 
 
 /* content */
-.content {
+#content {
     width: 100%;
     height: auto;
     margin-top: 50px;
 }
-.content h1 {
+#content h1 {
     font-size: 1.8em;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 5px;
 }
-.content h2 {
+#content h2 {
     font-size: 1.4em;
     font-weight: bold;
     margin: 10px 0;
 }
-.content p {
+#content p {
     font-size: 1.07em;
     text-indent: 30px;
     line-height: 1.8;
     letter-spacing: 1px;
 }
-.content sup {
+#content sup {
     vertical-align: super;
     font-size: 0.5em;
 }
