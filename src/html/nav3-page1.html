@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>八大行星-火星</title>
+    <!--清空样式-->
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <!--默认样式-->
+    <link rel="stylesheet" href="/css/base/default.css">
+    <!--容器样式-->
+    <link rel="stylesheet" href="/css/container.css">
+    <!--内容区样式-->
+    <link rel="stylesheet" href="/css/content.css">
+</head>
+<body>
+<!--header-->
+<ast-header nav-selected="1"></ast-header>
+<script src="/js/ast-header.js"></script>
+
+<!--main-->
+<main style="background-image: url('/img/bg_container.jpg');">
+    <div id="view_container">
+
+        <!--侧边栏-->
+        <div id="sidebar_container">
+            <side-bar></side-bar>
+        </div>
+
+        <div id="content_container">
+
+
+            <!--内容区-->
+            <div id="content">
+
+            </div>
+        </div>
+        <script src="/js/content.js"></script>
+        <script src="/js/sidebar.js"></script>
+    </div>
+</main>
+
+<!--footer-->
+<ast-footer></ast-footer>
+<script src="/js/ast-footer.js"></script>
+</body>
+</html>
