@@ -10,8 +10,8 @@
     --carousel-img-border-color: #9e9e9e;
 }
 body,html {
-    height: 100%;
     width: 100%;
+    height: auto;
     overflow-x: hidden;
 }
 li {

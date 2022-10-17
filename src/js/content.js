@@ -4,23 +4,20 @@
     // 动态添加标签
     let sideBar = document.getElementsByTagName("side-bar")[0];
     for (let i = 0; i < h1.length; i++) {
-        let title = h1[i].innerHTML;
+        let target = h1[i];
+        // 设置a标签
         let a = document.createElement("a");
         a.setAttribute("href", "javascript:");
-        a.innerHTML = title;
-        sideBar.appendChild(a);
-    }
+        a.innerHTML = target.innerHTML;
 
-    let aLabels = sideBar.getElementsByTagName("a");
-    for (let i = 0; i < aLabels.length; i++) {
-        aLabels[i].index = i;
-        aLabels[i].onclick = function () {
-            let index = this.index;
-            let target = h1[index];
+        // 添加点击事件
+        a.addEventListener("click", function () {
             target.scrollIntoView({
                 behavior: "smooth",
                 block: "center"
             });
-        }
+        })
+
+        sideBar.appendChild(a);
     }
 })();

@@ -12,10 +12,14 @@ main {
     margin: 60px auto;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+}
+#sidebar_container {
+    width: 223px;
+    height: auto;
+    position: relative;
 }
 #content_container {
-    width: 72%;
+    width: 750px;
     height: auto;
     margin-left: 25px;
     background-color: white;
