@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/css/base/default.css">
     <!--容器样式-->
     <link rel="stylesheet" href="/css/container.css">
-
+    <!--内容区样式-->
+    <link rel="stylesheet" href="/css/content.css">
 </head>
 <body>
     <!--header-->
@@ -21,15 +22,14 @@
         <div id="view_container">
 
             <!--侧边栏-->
-            <side-bar>
-                <a href="#">test</a>
-                <a href="#">test</a>
-                <a href="#">test</a>
-                <a href="#">test</a>
-            </side-bar>
-            <script src="/js/sidebar.js"></script>
+            <div id="sidebar_container">
+                <side-bar></side-bar>
+            </div>
 
             <div id="content_container">
+
+                <!--标题-->
+                <div id="content_title">月食</div>
 
                 <!--轮播图-->
                 <carousel-image>
@@ -41,16 +41,11 @@
 
                 <!--内容区-->
                 <div id="content">
-                    <p>article 测试测试</p>
-                    <p>article</p>
-                    <p>article</p>
-                    <p>article</p>
-                    <p>article</p>
-                    <p>article</p>
-                    <p>article</p>
-                    <p>article</p>
+
                 </div>
             </div>
+            <script src="/js/content.js"></script>
+            <script src="/js/sidebar.js"></script>
         </div>
     </main>
 
