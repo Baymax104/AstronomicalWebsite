@@ -14,13 +14,14 @@ main {
     justify-content: flex-start;
 }
 #sidebar_container {
-    width: 223px;
+    width: 222px;
     height: auto;
     position: relative;
 }
 #content_container {
     width: 750px;
     height: auto;
+    box-sizing: border-box;
     margin-left: 25px;
     background-color: white;
     padding: 30px 50px 50px 50px;
