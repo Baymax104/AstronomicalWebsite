@@ -39,3 +39,8 @@
     vertical-align: super;
     font-size: 0.5em;
 }
+#content li {
+    list-style: decimal;
+    font-size: 1.07em;
+    margin: 20px 0 20px 30px;
+}
