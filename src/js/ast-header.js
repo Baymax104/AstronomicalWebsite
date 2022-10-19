@@ -72,7 +72,7 @@ headerTemp.innerHTML = `
             }
             if (navSelected !== navALabels.length - 1) {
                 navALabels[navALabels.length - 1].onclick = function () {
-                    location.href = "picture-display.html";
+                    location.href = "pictures.html";
                 }
             }
 
