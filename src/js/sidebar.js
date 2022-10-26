@@ -34,8 +34,6 @@ sideBarTemp.innerHTML = `
                 sideBarList.appendChild(sideBarItem);
             }
 
-
-
             shadow.appendChild(content);
         }
     }

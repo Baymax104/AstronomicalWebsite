@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>图片展示</title>
+    <!--导入jquery-->
+    <script src="/js/jquery-3.1.1.min.js"></script>
     <!--清空样式-->
     <link rel="stylesheet" href="/css/base/reset.css">
     <!--默认样式-->
     <link rel="stylesheet" href="/css/base/default.css">
+    <!--容器样式-->
+    <link rel="stylesheet" href="/css/container.css">
+    <!--图片区样式-->
+    <link rel="stylesheet" href="/css/picture.css">
+
+    <script src="/js/picture.js"></script>
 </head>
 <body>
 
@@ -16,7 +24,30 @@
 
     <!--main-->
     <main style="background-image: url('/img/bg_container.jpg')">
+        <div id="picture_view_container">
 
+            <div id="picture_sidebar_container">
+                <picture-sidebar></picture-sidebar>
+            </div>
+            <script src="/js/picture-sidebar.js"></script>
+
+            <div id="picture_content_container">
+<!--                picture_title-->
+                <div id="picture_container">
+                </div>
+            </div>
+
+            <!--在container加载完成后动态创建节点-->
+            <script>
+                let container = $("#picture_container");
+                for (let i = 1; i < 32; i++) {
+                    let box = $("<div class='box'></div>").appendTo(container);
+                    let pic = $("<div class='pic'></div>").appendTo(box);
+                    $("<img alt='' src='/img/pictures/Earth/Earth" + i + ".jpg'>").appendTo(pic);
+                }
+            </script>
+
+        </div>
     </main>
 
     <!--footer-->
