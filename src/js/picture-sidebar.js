@@ -16,7 +16,6 @@ pictureSideBarTemp.innerHTML = `
             <li class="side_bar_item"><a href="javascript:">土星</a></li> 
             <li class="side_bar_item"><a href="javascript:">天王星</a></li> 
             <li class="side_bar_item"><a href="javascript:">海王星</a></li> 
-            <li class="side_bar_item"><a href="javascript:">日食、月食</a></li> 
             <li class="side_bar_item"><a href="javascript:">星系</a></li>
             <li class="side_bar_item"><a href="javascript:">星云</a></li>
         </ul>

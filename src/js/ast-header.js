@@ -67,12 +67,12 @@ headerTemp.innerHTML = `
             // nav栏首页和图片库添加跳转
             if (navSelected !== 0) {
                 navALabels[0].onclick = function () {
-                    location.href = "index.html";
+                    location.href = "../html/index.html";
                 }
             }
             if (navSelected !== navALabels.length - 1) {
                 navALabels[navALabels.length - 1].onclick = function () {
-                    location.href = "pictures.html";
+                    location.href = "../html/pictures.html?page=0";
                 }
             }
 

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="/css/container.css">
     <!--图片区样式-->
     <link rel="stylesheet" href="/css/picture.css">
-
-    <script src="/js/picture.js"></script>
+    <!--声明函数和数据-->
+    <script src="/js/picture_functions.js"></script>
 </head>
 <body>
 
@@ -33,24 +33,12 @@
             <script src="/js/picture-sidebar.js"></script>
 
             <div id="picture_content_container">
-
                 <!--标题-->
                 <div id="picture_title">图片展示</div>
-
                 <!--图片容器-->
                 <div id="picture_container"></div>
-
             </div>
-
-            <!--在container加载完成后动态创建节点-->
-            <script>
-                let container = $("#picture_container");
-                for (let i = 1; i < 32; i++) {
-                    let box = $("<div class='box'></div>").appendTo(container);
-                    let pic = $("<div class='pic'></div>").appendTo(box);
-                    $("<img alt='' src='/img/pictures/Earth/Earth" + i + ".jpg'>").appendTo(pic);
-                }
-            </script>
+            <script src="/js/picture_transform.js"></script>
 
         </div>
     </main>
