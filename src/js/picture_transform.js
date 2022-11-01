@@ -12,7 +12,7 @@
     for (let i = 0; i < aLabels.length; i++) {
         aLabels[i].index = i;
         aLabels[i].onclick = function () {
-            location.href = "../html/pictures.html?page=" + this.index;
+            location.href = "./pictures.html?page=" + this.index;
         }
     }
 })();

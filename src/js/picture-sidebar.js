@@ -1,9 +1,9 @@
 let pictureSideBarTemp = document.createElement("template");
 
 pictureSideBarTemp.innerHTML = `
-    <link rel="stylesheet" href="/css/base/reset.css">
-    <link rel="stylesheet" href="/css/base/default.css">
-    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="./css/base/reset.css">
+    <link rel="stylesheet" href="./css/base/default.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
 
     <div id="picture_sidebar">
         <span id="side_bar_title">导航</span>

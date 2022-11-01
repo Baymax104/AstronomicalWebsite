@@ -1,13 +1,13 @@
 const headerTemp = document.createElement("template");
 
 headerTemp.innerHTML = `
-    <link rel="stylesheet" href="/css/base/reset.css">
-    <link rel="stylesheet" href="/css/base/default.css">
-    <link rel="stylesheet" href="/css/ast-header.css">
+    <link rel="stylesheet" href="./css/base/reset.css">
+    <link rel="stylesheet" href="./css/base/default.css">
+    <link rel="stylesheet" href="./css/ast-header.css">
     
     <header>
         <div id="nav_logo">
-            <img id="nav_logo_img" src="/img/icon_logo.png" alt="icon">
+            <img id="nav_logo_img" src="./img/icon_logo.png" alt="icon">
             <span id="nav_logo_title">Astronomy</span>
         </div>
         <ul id="nav_list">
@@ -67,12 +67,12 @@ headerTemp.innerHTML = `
             // nav栏首页和图片库添加跳转
             if (navSelected !== 0) {
                 navALabels[0].onclick = function () {
-                    location.href = "../html/index.html";
+                    location.href = "./index.html";
                 }
             }
             if (navSelected !== navALabels.length - 1) {
                 navALabels[navALabels.length - 1].onclick = function () {
-                    location.href = "../html/pictures.html?page=0";
+                    location.href = "./pictures.html?page=0";
                 }
             }
 
@@ -81,7 +81,7 @@ headerTemp.innerHTML = `
             for (let i = 0; i < menus.length; i++) {
                 let aLabels = menus[i].getElementsByTagName("a");
                 for (let j = 0; j < aLabels.length; j++) {
-                    let url = "nav" + (i + 1) + "-page" + (j + 1) + ".html";
+                    let url = "./nav" + (i + 1) + "-page" + (j + 1) + ".html";
                     aLabels[j].onclick = function () {
                         location.href = url;
                     }

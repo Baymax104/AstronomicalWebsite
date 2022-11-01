@@ -56,7 +56,7 @@ function append(container, selected) {
 
         box.innerHTML = `
             <div class="pic">
-                <img alt="" src="/img/pictures/${folderName}/${folderName + j}.jpg">
+                <img alt="" src="./img/pictures/${folderName}/${folderName + j}.jpg">
             </div>
         `;
 

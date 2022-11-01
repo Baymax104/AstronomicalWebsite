@@ -1,9 +1,9 @@
 let carouselTemp = document.createElement("template");
 
 carouselTemp.innerHTML = `
-    <link rel="stylesheet" href="/css/base/reset.css">
-    <link rel="stylesheet" href="/css/base/default.css">
-    <link rel="stylesheet" href="/css/carousel-image.css">
+    <link rel="stylesheet" href="./css/base/reset.css">
+    <link rel="stylesheet" href="./css/base/default.css">
+    <link rel="stylesheet" href="./css/carousel-image.css">
     
     <div id="carousel_container">
         <ul id="carousel_img_container">
